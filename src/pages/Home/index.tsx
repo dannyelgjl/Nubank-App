@@ -1,9 +1,9 @@
 import React from 'react';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import Card from '../../components/Card';
 import Icon from 'react-native-vector-icons/EvilIcons';
 
 // Styles Components
-import { Container, Header, TextTitle, Configs, RoundedButton } from './styles';
+import { Container, Header, TextTitle, Configs, RoundedButton, ContainerCard } from './styles';
 
 const Home: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <Header>
         <TextTitle>
           Olá, Daniel Lindo
-          </TextTitle>
+        </TextTitle>
 
         <Configs>
           <RoundedButton>
@@ -22,6 +22,9 @@ const Home: React.FC = () => {
           </RoundedButton>
         </Configs>
       </Header>
+      <ContainerCard>
+        <Card />
+      </ContainerCard>
     </Container>
   );
 }

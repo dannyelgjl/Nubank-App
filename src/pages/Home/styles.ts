@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  padding: 40px 20px 0 20px;
+  padding: 40px 12px 0;
   
 `;
 
@@ -31,6 +31,9 @@ export const RoundedButton = styled.TouchableOpacity`
   border-radius: 30px;
   padding: 4px;
   margin-right: 8px;
-  background: rgba(0, 0, 0, 0.1);
   background: #9824c7;
+`;
+
+export const ContainerCard = styled.ScrollView`
+  margin-top: 28px;
 `;
