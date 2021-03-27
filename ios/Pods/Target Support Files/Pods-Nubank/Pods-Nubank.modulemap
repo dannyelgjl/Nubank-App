@@ -1,0 +1,6 @@
+module Pods_Nubank {
+  umbrella header "Pods-Nubank-umbrella.h"
+
+  export *
+  module * { export * }
+}
