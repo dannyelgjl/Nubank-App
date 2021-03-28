@@ -1,26 +1,14 @@
 import React from 'react';
 import Card from '../../components/Card';
-import Icon from 'react-native-vector-icons/EvilIcons';
+import Header from '../../components/Header';
 
 // Styles Components
-import { Container, Header, TextTitle, Configs, RoundedButton, ContainerCard } from './styles';
+import { Container, ContainerCard } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Header>
-        <TextTitle>
-          Olá, Daniel Lindo
-        </TextTitle>
-        <Configs>
-          <RoundedButton>
-            <Icon name="eye" size={38} color="#ccc" />
-          </RoundedButton>
-          <RoundedButton>
-            <Icon name="gear" size={38} color="#ccc" />
-          </RoundedButton>
-        </Configs>
-      </Header>
+      <Header title="Daniel Jerônimo" />
       <ContainerCard>
         <Card
           title="Cartão de Crédito"
