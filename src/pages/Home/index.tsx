@@ -12,7 +12,6 @@ const Home: React.FC = () => {
         <TextTitle>
           Olá, Daniel Lindo
         </TextTitle>
-
         <Configs>
           <RoundedButton>
             <Icon name="eye" size={38} color="#ccc" />
@@ -23,7 +22,27 @@ const Home: React.FC = () => {
         </Configs>
       </Header>
       <ContainerCard>
-        <Card />
+        <Card
+          title="Cartão de Crédito"
+          subTitle="Fatura atual"
+          value="R$ 200,00"
+          availableLimit="Limite do Cartão"
+          limit="R$ 100,00"
+          activeLimit
+        />
+
+        <Card
+          title="Conta"
+          subTitle="Saldo disponível"
+          value="R$ 10.000,00"
+        />
+
+        <Card
+          title="Seguro de vida"
+          subTitle="Conheça Nubank Vida: 
+          um seguro simples e que cabe no seu bolso"
+          buttonActive
+        />
       </ContainerCard>
     </Container>
   );

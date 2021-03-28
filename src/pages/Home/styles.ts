@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-  padding: 40px 12px 0;
-  
+  padding: 30px 12px 0;
 `;
 
 export const Header = styled.View`
