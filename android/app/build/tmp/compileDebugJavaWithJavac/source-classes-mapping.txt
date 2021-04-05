@@ -1,0 +1,14 @@
+com/nubank/MainApplication.java
+ com.nubank.MainApplication
+ com.nubank.MainApplication$1
+com/nubank/BuildConfig.java
+ com.nubank.BuildConfig
+com/nubank/ReactNativeFlipper.java
+ com.nubank.ReactNativeFlipper
+ com.nubank.ReactNativeFlipper$1
+ com.nubank.ReactNativeFlipper$2
+ com.nubank.ReactNativeFlipper$2$1
+com/nubank/MainActivity.java
+ com.nubank.MainActivity
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList

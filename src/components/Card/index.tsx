@@ -1,5 +1,9 @@
 import React from 'react';
+// Icon
 import Icon from 'react-native-vector-icons/AntDesign';
+// Types
+import { CardProps } from './types';
+// Styles
 import {
   Container,
   Title,
@@ -13,15 +17,6 @@ import {
   TextButton,
 } from './styles';
 
-interface CardProps {
-  title: string;
-  subTitle: string;
-  value?: string;
-  availableLimit?: string;
-  limit?: string;
-  buttonActive?: boolean;
-  activeLimit?: boolean;
-}
 
 const Card: React.FC<CardProps> = ({
   title,
@@ -30,7 +25,8 @@ const Card: React.FC<CardProps> = ({
   availableLimit,
   limit,
   buttonActive,
-  activeLimit
+  activeLimit,
+  onPress
 }) => {
   return (
     <Container>
@@ -48,7 +44,7 @@ const Card: React.FC<CardProps> = ({
           <AvailableLimit>{availableLimit} <Limit>{limit}</Limit></AvailableLimit>
         )}
         {buttonActive && (
-          <Button>
+          <Button onPress={onPress}>
             <TextButton>conhecer</TextButton>
           </Button>
         )}

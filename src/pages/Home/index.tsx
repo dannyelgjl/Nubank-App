@@ -1,15 +1,16 @@
 import React from 'react';
+// Components
 import Card from '../../components/Card';
 import Header from '../../components/Header';
-
-// Styles Components
+import Tabs from '../../components/Tabs';
+// Styles
 import { Container, ContainerCard } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
       <Header title="Daniel Jerônimo" />
-      <ContainerCard>
+      <ContainerCard showsVerticalScrollIndicator={false}>
         <Card
           title="Cartão de Crédito"
           subTitle="Fatura atual"
@@ -31,7 +32,16 @@ const Home: React.FC = () => {
           um seguro simples e que cabe no seu bolso"
           buttonActive
         />
+
+        <Card
+          title="Seguro de vida"
+          subTitle="Conheça Nubank Vida: 
+          um seguro simples e que cabe no seu bolso"
+          buttonActive
+        />
       </ContainerCard>
+
+      <Tabs />
     </Container>
   );
 }

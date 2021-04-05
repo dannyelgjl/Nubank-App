@@ -1,10 +1,11 @@
 import React from 'react';
+// Icon
 import Icon from 'react-native-vector-icons/EvilIcons';
+// Types
+import { HeaderProps } from './types';
+// Styles
 import { Container, TextTitle, Configs, RoundedButton } from './styles';
 
-interface HeaderProps {
-  title: string;
-}
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
   return (
